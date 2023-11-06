@@ -1,0 +1,70 @@
+@import url('node_modules/atropos/atropos.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lora&family=Montserrat:wght@300&family=Poppins:wght@200;400&family=Roboto:wght@300&display=swap');
+@import url('node_modules/swiper/swiper-bundle.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For Webkit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+
+.CardShadow{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.NavLink{
+    @apply font-link text-lg p-1;
+}
+.active{
+    @apply text-xl border-b-2 border-b-amber-500;
+}
+.Input{
+    @apply w-full border border-gray-300 px-3 py-2 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500;
+}
+.ActiveBuyRent{
+    @apply border-b-4 border-b-amber-400 font-bold;
+}
+.IntroCounterContainer{
+    @apply p-2 ps-4 bg-gradient-to-r from-pink-100 to-white w-fit font-medium rounded-xl;
+}
+.Indicator{
+    @apply w-[30px] h-[30px] flex justify-center items-center bg-neutral-200 rounded-3xl;
+}
+.Hello{
+    background: rgba(0, 0, 0, 0.4);
+}
+.cardbody:hover .cardcontent{
+    top: 0;
+
+}
+.swiper-3d .swiper-slide-shadow-left,.swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+.mySwiper .swiper-slide{
+    filter: blur(4px);
+}
+.mySwiper .swiper-slide-active{
+    filter: none;
+}
