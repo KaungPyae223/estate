@@ -14,21 +14,20 @@ import NavBar from "../Components/NavBar.jsx";
 const Home = () => {
 
     return (
-        <>
-            <div className={"w-full lg:w-4/5  mx-auto"}>
-
-                <Hero/>
-                <HomeSearch/>
-                <Intro/>
-                <Properties/>
-                <PropertiesByType/>
-                <PropertiesByLocation/>
-                <WhyChooseUs/>
-                <OurAgent/>
-                <Review/>
-            </div>
-            <Footer/>
-        </>
+      <>
+        <div className={"w-full lg:w-4/5  mx-auto"}>
+          <Hero />
+          <HomeSearch />
+          <Intro />
+          <Properties />
+          <PropertiesByType />
+          <PropertiesByLocation />
+          <WhyChooseUs />
+          <OurAgent />
+          <Review />
+        </div>
+        <Footer />
+      </>
     );
 };
 
